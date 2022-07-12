@@ -114,9 +114,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 5
-      minScalar: 5
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -167,9 +167,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startSpeed:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 5
-      minScalar: 5
+      minMaxState: 3
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -865,7 +865,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -2627,7 +2627,7 @@ ParticleSystem:
     drag:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.7
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4819,7 +4819,7 @@ GameObject:
   - component: {fileID: 5314572208186777996}
   m_Layer: 0
   m_Name: Coin Bronze
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4831,7 +4831,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8345131023267543348}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4854,7 +4854,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!135 &5314572208186777994
 SphereCollider:
@@ -4895,7 +4895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  value: 1
+  value: 5
 --- !u!1 &8667118763857811685
 GameObject:
   m_ObjectHideFlags: 0

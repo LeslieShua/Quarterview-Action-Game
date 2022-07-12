@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5495207142687259685}
   - component: {fileID: 1449905882133985791}
   - component: {fileID: 1738550029643244275}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4173704753984426446}
   - component: {fileID: 4173704753984426445}
   - component: {fileID: 4173704753984426447}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bullet Case
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6244166132504187690}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

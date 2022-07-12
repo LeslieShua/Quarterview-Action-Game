@@ -91,8 +91,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4786501292150868592}
   - component: {fileID: 6598737544138155520}
-  - component: {fileID: 6598737544138155535}
   - component: {fileID: 6598737544138155534}
+  - component: {fileID: 6598737544138155535}
   - component: {fileID: 6598737544138155521}
   m_Layer: 0
   m_Name: Weapon Hammer
@@ -108,7 +108,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5271112878016532682}
-  m_LocalRotation: {x: -0, y: -0, z: 0.27213845, w: 0.96225816}
+  m_LocalRotation: {x: 0, y: 0, z: 0.27213752, w: 0.9622584}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -132,9 +132,9 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
---- !u!135 &6598737544138155535
+--- !u!135 &6598737544138155534
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,9 +145,9 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!135 &6598737544138155534
+--- !u!135 &6598737544138155535
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

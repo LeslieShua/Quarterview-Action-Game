@@ -13,10 +13,10 @@ public class Weapon : MonoBehaviour
 
     public BoxCollider meleeArea;   //공격 범위 
     public TrailRenderer trailEffect; //Effect
-    public Transform bulletPos; //총알 위치 저장 변수
-    public GameObject bullet; //총알 저장 변수
-    public Transform bulletCasePos;
-    public GameObject bulletCase;
+    public Transform bulletPos; //총 쏘는위치 저장 변수
+    public GameObject bullet; //총알 Material, Damage등 저장 변수 종류 2개있음
+    public Transform bulletCasePos; //탄피 나오는 위치 저장 변수 
+    public GameObject bulletCase; //탄피 Material 또는 총알 관통 방지 기능
     
 
     public void Use()
