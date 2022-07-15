@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8170728068168834678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.07, y: 0.6004524, z: -15.070901}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 634309659866706642}
@@ -101,11 +101,22 @@ MonoBehaviour:
   enemyType: 2
   maxHealth: 200
   curHealth: 200
+  score: 500
   target: {fileID: 0}
   meleeArea: {fileID: 0}
   bullet: {fileID: 4069475616612168751, guid: f2f891025133a8b498cf40ae7774f525, type: 3}
+  coins:
+  - {fileID: 8345131023267543348, guid: 5547d31a03186734591f948c63d710f9, type: 3}
+  - {fileID: 8469847505015786410, guid: d6b9789c9bd4ede46bc2aa373a885d67, type: 3}
+  - {fileID: 2903024605068505220, guid: 8b69484e3e41eec48b7bd1e72683529d, type: 3}
   isChase: 0
   isAttack: 0
+  isDead: 0
+  rigid: {fileID: 0}
+  boxCollider: {fileID: 0}
+  meshs: []
+  nav: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1001 &1100914858541012281
 PrefabInstance:
   m_ObjectHideFlags: 0

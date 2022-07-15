@@ -50,14 +50,12 @@ public class Boss : Enemy
             case 0:
             case 1:
                 //미사일 공격 패턴
-                StartCoroutine(Taunt());
-                //StartCoroutine(MissileShot());
+                StartCoroutine(MissileShot());
                 break;
             case 2:
             case 3:
                 //돌 공격 패던
-                StartCoroutine(Taunt());
-               // StartCoroutine(RockShot());
+                StartCoroutine(RockShot());
                 break;
             case 4:
                 //점프 공격 패턴

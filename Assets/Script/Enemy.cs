@@ -9,9 +9,12 @@ public class Enemy : MonoBehaviour
     public Type enemyType;
     public int maxHealth;
     public int curHealth;
+    public int score; //에너미 점수와
+    public GameManager manager;
     public Transform target;
     public BoxCollider meleeArea; //Eenemy 근접 범위
     public GameObject bullet;
+    public GameObject[] coins; //에너미 동전
 
     public bool isChase; //추적을 결정하는 변수
     public bool isAttack;
@@ -188,9 +191,30 @@ public class Enemy : MonoBehaviour
 
             gameObject.layer = 14;  //레이어 번호를 그대로 가져옴
             isDead = true;
+            isChase = false;
             nav.enabled = false; //죽었을때 nav기능 비활성화
             anim.SetTrigger("doDie"); //죽었을때의 애니메이션
-            isChase = false;
+            Player player = target.GetComponent<Player>();
+            player.score += score;
+            int ranCoin = Random.Range(0, 3);
+            Instantiate(coins[ranCoin], transform.position, Quaternion.identity);
+            //0~3 랜덤으로 코인 드랍 
+
+            //switch문으로 각 타입에 맞게 숫자 감소
+            switch (enemyType) {
+                case Type.A:
+                    manager.enemyCntA--;
+                    break;
+                case Type.B:
+                    manager.enemyCntB--;
+                    break;
+                case Type.C:
+                    manager.enemyCntC--;
+                    break;
+                case Type.D:
+                    manager.enemyCntD--;
+                    break;
+            }  
 
             if (isGreade) { //수류탄에 죽었을때
                 reactVec = reactVec.normalized; //대각선 이동까지 정규화
@@ -205,8 +229,8 @@ public class Enemy : MonoBehaviour
                 reactVec += Vector3.up;
                 rigid.AddForce(reactVec * 5, ForceMode.Impulse);
             }
-            if(enemyType != Type.D)
-                Destroy(gameObject, 4);
+            
+            Destroy(gameObject, 4);
         }
     }
 }
